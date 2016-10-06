@@ -11,7 +11,7 @@
   <body>
     <div class="flash">
       <% flash.each do |key, message| %>
-        <span class="flash__message flash__message--<%= key %>"><%= value %></span>
+        <span class="flash__message flash__message--<%= key %>"><%= message %></span>
       <% end %>
     </div>
 
