@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  enum role: [:directors, :sales, :user]
+  enum role: [:directors, :sales, :users]
   after_initialize :set_default_role, :if => :new_record?
 
   devise :database_authenticatable, :registerable,
