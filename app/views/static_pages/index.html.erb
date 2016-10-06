@@ -1,3 +1,9 @@
 <section>
   <h2>PUNDIT APP</h2>
+  <nav>
+    <% unless current_user %>
+      <li><%= link_to "Sign up", new_user_registration_path %></li>
+      <li><%= link_to "Sign in", new_user_session_path %></li>
+    <% end %> 
+  </nav>
 </section>
