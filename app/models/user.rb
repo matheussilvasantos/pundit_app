@@ -8,6 +8,6 @@ class User < ApplicationRecord
   private
 
     def set_default_role
-      self.role ||= :user
+      self.role ||= :users
     end
 end
